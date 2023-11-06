@@ -17,7 +17,7 @@ import javax.annotation.processing.Generated;
         "content"
 })
 @Generated("jsonschema2pojo")
-public class Message {
+public class ChatMessage {
 
     @JsonProperty("role")
     private String role;
@@ -26,7 +26,7 @@ public class Message {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    public Message(String role, String content) {
+    public ChatMessage(String role, String content) {
         this.role = role;
         this.content = content;
     }

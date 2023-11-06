@@ -29,7 +29,7 @@ public class ChatRequest {
     @JsonProperty("model")
     private String model;
     @JsonProperty("messages")
-    private List<Message> messages;
+    private List<ChatMessage> messages;
     @JsonProperty("n")
     private Integer n;
     @JsonProperty("temperature")
@@ -54,12 +54,12 @@ public class ChatRequest {
     }
 
     @JsonProperty("messages")
-    public List<Message> getMessages() {
+    public List<ChatMessage> getMessages() {
         return messages;
     }
 
     @JsonProperty("messages")
-    public void setMessages(List<Message> messages) {
+    public void setMessages(List<ChatMessage> messages) {
         this.messages = messages;
     }
 

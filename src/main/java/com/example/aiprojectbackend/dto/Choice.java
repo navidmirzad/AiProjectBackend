@@ -25,7 +25,7 @@ public class Choice {
     @JsonProperty("index")
     private Integer index;
     @JsonProperty("message")
-    private Message message;
+    private ChatMessage message;
     @JsonProperty("finish_reason")
     private String finishReason;
     @JsonIgnore
@@ -42,12 +42,12 @@ public class Choice {
     }
 
     @JsonProperty("message")
-    public Message getMessage() {
+    public ChatMessage getMessage() {
         return message;
     }
 
     @JsonProperty("message")
-    public void setMessage(Message message) {
+    public void setMessage(ChatMessage message) {
         this.message = message;
     }
 
