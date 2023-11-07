@@ -71,4 +71,13 @@ public class Choice {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "Choice{" +
+                "index=" + index +
+                ", message=" + message +
+                ", finishReason='" + finishReason + '\'' +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

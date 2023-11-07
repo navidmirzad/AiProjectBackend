@@ -110,4 +110,16 @@ public class ChatResponse {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "ChatResponse{" +
+                "id='" + id + '\'' +
+                ", object='" + object + '\'' +
+                ", created=" + created +
+                ", model='" + model + '\'' +
+                ", choices=" + choices +
+                ", usage=" + usage +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

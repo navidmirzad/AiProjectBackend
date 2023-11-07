@@ -61,4 +61,12 @@ public class ChatMessage {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "ChatMessage{" +
+                "role='" + role + '\'' +
+                ", content='" + content + '\'' +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

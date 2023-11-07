@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -18,6 +19,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin
 @RestController
 public class MovieController {
 
@@ -95,4 +97,5 @@ public class MovieController {
         List<Genre> genres = genreRepository.findAll();
         return new ResponseEntity<>(genres, HttpStatus.OK);
     }
+
 }
